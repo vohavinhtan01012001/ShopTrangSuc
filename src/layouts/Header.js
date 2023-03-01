@@ -59,7 +59,7 @@ function Header() {
                                 </ul>
                             </nav>
                         </div>
-                        <div className="col-lg-3">
+                        {/* <div className="col-lg-3">
                             <div className="header__right">
                                 <div className="header__right__auth">
                                     <Link to="/">Login</Link>
@@ -77,7 +77,7 @@ function Header() {
                                     </Link></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="canvas__open">
                         <i className="fa fa-bars"></i>
