@@ -34,7 +34,7 @@
 html,
 body {
 	height: 100%;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif !important;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -47,7 +47,7 @@ h6 {
 	margin: 0;
 	color: #111111;
 	font-weight: 400;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif !important;
 }
 
 h1 {
@@ -341,10 +341,6 @@ ol {
 	position: relative;
 }
 
-.header__menu ul li:hover{
-	text-decoration: none;
-}
-
 .header__menu ul li.active a:after {
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
@@ -424,6 +420,11 @@ ol {
 	-webkit-transform: scale(0);
 	-ms-transform: scale(0);
 	transform: scale(0);
+}
+
+.header__menu ul li a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
 }
 
 .header__right {
@@ -620,7 +621,7 @@ ol {
 .trend__item__text .rating i {
 	font-size: 10px;
 	color: #e3c01c;
-	margin-right: -4px;
+	/* margin-right: -4px; */
 }
 
 .trend__item__text .rating i:last-child {
@@ -891,6 +892,12 @@ ol {
 
 .footer__widget ul li {
 	list-style: none;
+}
+
+.footer__widget a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
 }
 
 .footer__widget ul li a {
